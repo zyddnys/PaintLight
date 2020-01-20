@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns:atg="http://atg.xbox.com" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="ScreenQuad">
+      <UniqueIdentifier>{c544888b-4d55-4972-b167-f382560e133f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CSShaders">
+      <UniqueIdentifier>{1ca2898f-1be2-4b17-b921-b5ae84a6211e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImageOps">
+      <UniqueIdentifier>{3dfa1368-591e-4428-8990-e3a0ec9b472f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\DXUT\Optional\directx.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </CLInclude>
+    <ResourceCompile Include="PaintLight.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ClInclude Include="ScreenQuad.h">
+      <Filter>ScreenQuad</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d11helper.h" />
+    <ClInclude Include="InputHelper.h" />
+    <ClInclude Include="PaintLight.h" />
+    <ClInclude Include="CImg.h" />
+    <ClInclude Include="QuickHull.hpp" />
+    <ClInclude Include="RGBAImage.h" />
+    <ClInclude Include="GrayScale.h">
+      <Filter>ImageOps</Filter>
+    </ClInclude>
+    <ClInclude Include="GaussianBlur.h">
+      <Filter>ImageOps</Filter>
+    </ClInclude>
+    <ClInclude Include="HorizontalFlip.h">
+      <Filter>ImageOps</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageMinMax.h">
+      <Filter>ImageOps</Filter>
+    </ClInclude>
+    <ClInclude Include="AddScalar.h">
+      <Filter>ImageOps</Filter>
+    </ClInclude>
+    <ClInclude Include="MulScalar.h">
+      <Filter>ImageOps</Filter>
+    </ClInclude>
+    <ClInclude Include="MulImage.h">
+      <Filter>ImageOps</Filter>
+    </ClInclude>
+    <ClInclude Include="CoarseLighting.h">
+      <Filter>ImageOps</Filter>
+    </ClInclude>
+    <ClInclude Include="NormalizeImage.h">
+      <Filter>ImageOps</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenFileDialog.h" />
+    <ClInclude Include="Lighting.h">
+      <Filter>ImageOps</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PaintLight.cpp" />
+    <ClCompile Include="d3d11helper.cpp" />
+    <ClCompile Include="QuickHull.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="ScreenQuadPS.hlsl">
+      <Filter>ScreenQuad</Filter>
+    </FxCompile>
+    <FxCompile Include="ScreenQuadVS.hlsl">
+      <Filter>ScreenQuad</Filter>
+    </FxCompile>
+    <FxCompile Include="GaussianBlur.hlsl">
+      <Filter>CSShaders</Filter>
+    </FxCompile>
+    <FxCompile Include="CHW2HWC.hlsl">
+      <Filter>CSShaders</Filter>
+    </FxCompile>
+    <FxCompile Include="GrayScale.hlsl">
+      <Filter>CSShaders</Filter>
+    </FxCompile>
+    <FxCompile Include="HorizontalFlip.hlsl">
+      <Filter>CSShaders</Filter>
+    </FxCompile>
+    <FxCompile Include="ImageMinMax.hlsl">
+      <Filter>CSShaders</Filter>
+    </FxCompile>
+    <FxCompile Include="AddScalar.hlsl">
+      <Filter>CSShaders</Filter>
+    </FxCompile>
+    <FxCompile Include="MulScalar.hlsl">
+      <Filter>CSShaders</Filter>
+    </FxCompile>
+    <FxCompile Include="MulImage.hlsl">
+      <Filter>CSShaders</Filter>
+    </FxCompile>
+    <FxCompile Include="CoarseLighting.hlsl">
+      <Filter>CSShaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Lighting.hlsl">
+      <Filter>CSShaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
